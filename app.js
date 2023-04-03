@@ -40,7 +40,7 @@ app.post("/", function(req, res) {
     });
     const url = "https://us8.api.mailchimp.com/3.0/list/bea9012d63";
     https.get(url, function(response){
-      if (response.statusCode === 401) {
+      if (response.statusCode === 200) {
         res.sendFile(__dirname + "/success.html");
       } else {
         res.sendFile(__dirname + "/failure.html");
