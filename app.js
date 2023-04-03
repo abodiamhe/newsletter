@@ -23,7 +23,7 @@ app.post("/", function(req, res) {
 
 
   mailchimp.setConfig({
-    apiKey: "4c8293ac0f3d2f9084ea404e5ddc3bd6-us8",
+    apiKey: "d6cc093094ab92971674e2a8f07d1dd2-us8",
     server: "us8",
   });
   const list_id = "bea9012d63";
